@@ -1,25 +1,31 @@
 import java.util.Scanner;
 
 public class PrimeNum {
-    // Here i have to check the inserted interger to be prime or not
     public static void main(String[] args) {
-        System.out.print("Enter a positive number : ");
         Scanner sc = new Scanner(System.in);
-        int EnteredNum = sc.nextInt();
-        int count = 0;
-        if (EnteredNum > 0) {
-            for (int i = 1; i < EnteredNum; i++) {
-                if (EnteredNum % i == 0) {
-                    count++;
-                }
-            }
-        } else {
-            System.out.println("Enter a valid integer");
+        System.out.print("Enter a positive number: ");
+        int enteredNum = sc.nextInt();
+        sc.close(); // Always close the Scanner after use
+        
+        if (enteredNum <= 1) {
+            System.out.println("Enter a valid positive integer greater than 1.");
+            return;
         }
-        if (count == EnteredNum - 1) {
-            System.out.println("it is prime");
+        
+        boolean isPrime = true;
+        
+        for (int i = 2; i * i <= enteredNum; i++) { // Loop from 2 to sqrt(n)
+            if (enteredNum % i == 0) {
+                isPrime = false;
+                break; // No need to check further
+            }
+        }
+        
+        if (isPrime) {
+            System.out.println(enteredNum + " is a prime number.");
         } else {
-            System.out.println("it is not prime");
+            System.out.println(enteredNum + " is not a prime number.");
         }
     }
 }
+
