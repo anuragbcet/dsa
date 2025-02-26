@@ -6,9 +6,10 @@ public class LeapYear {
         System.out.print("Enter the year : ");
         Scanner sc = new Scanner(System.in);
         int Enteredyear= sc.nextInt();
-
         if(Enteredyear%400==0){
             System.out.println(Enteredyear +" is the leap year");
-        }
+        }else{
+		System.out.println(Enteredyear+" is not a leap year");
+	}
     }
 }
