@@ -1,4 +1,4 @@
-package kunal_k.loops;
+
 
 import java.util.Scanner;
 
