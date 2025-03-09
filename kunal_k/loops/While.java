@@ -18,6 +18,7 @@ public class While {
             System.out.println("hello world");
             count++;
         }
+        sc.close();
     }
 
 }

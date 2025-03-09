@@ -18,6 +18,7 @@ public class Evenodd {
             }
 
         }
+        sc.close();
     }
 
 }

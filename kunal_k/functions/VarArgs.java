@@ -1,3 +1,5 @@
+package kunal_k.functions;
+
 import java.util.Arrays;
 
 public class VarArgs {

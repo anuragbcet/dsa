@@ -10,5 +10,6 @@ public class Forloop {
         for(int i=0;i<number;i++){
             System.out.println("Hello world "+(i+1));
         }
+        sc.close();
     }
 }
