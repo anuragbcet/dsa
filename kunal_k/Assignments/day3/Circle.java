@@ -9,6 +9,6 @@ public class Circle{
         int r=sc.nextInt();
         float area = (float)3.14*r*r;
         System.out.println(area);
-
+        sc.close();
     }
 }

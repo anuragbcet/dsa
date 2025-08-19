@@ -9,7 +9,7 @@ public class countDays {
         Scanner sc= new Scanner(System.in);
         int days =sc.nextInt();
         int outingdays = days/2;
-        System.out.println("the number of outing days : "+outingdays);
+        System.out.println("the number of outing days : " + outingdays);
     }
     
 }
