@@ -9,7 +9,7 @@ public class symmetrictree {
         if(root==null || root.left==null && root.right==null){
             return true;
         }else{
-            root.left
+            root.left.val=root.right.val;
         }
 
     }
